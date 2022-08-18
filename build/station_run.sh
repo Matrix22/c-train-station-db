@@ -22,7 +22,7 @@ function check_test {
     begin_result='ref/result_'
     termination='.out'
 
-    arr=( "arrive_train" "leave_train" "add_train_car" "remove_train_cars" "move_train_cars" "find_express_train" "find_overload_train" "find_optimal_train" "find_heaviest_sequence_train" "order_train" "fix_overload_train" )
+    arr=( "arrive_train" "leave_train" "add_train_wagon" "remove_train_wagons" "move_train_wagons" "find_express_train" "find_overload_train" "find_optimal_train" "find_heaviest_sequence_train" "order_train" "fix_overload_train" )
 
     for i in ${!arr[@]}
     do

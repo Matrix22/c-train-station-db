@@ -41,14 +41,14 @@ void                    show_existing_trains                (train_station_t *st
 
 void                    arrive_train                        (train_station_t *station, int32_t platform, int32_t locomotive_power);
 void                    leave_train                         (train_station_t *station, int32_t platform);
-void                    add_train_car                       (train_station_t *station, int32_t platform, int32_t car_weight);
-void                    remove_train_cars                   (train_station_t *station, int32_t platform, int32_t car_weight);
-void                    move_train_cars                     (train_station_t *station, int32_t platform_f, int32_t pos_f, int32_t cars_no, int32_t platform_s, int32_t pos_s);
+void                    add_train_wagon                     (train_station_t *station, int32_t platform, int32_t wag_weight);
+void                    remove_train_wagons                 (train_station_t *station, int32_t platform, int32_t wag_weight);
+void                    move_train_wagons                   (train_station_t *station, int32_t platform_f, int32_t pos_f, int32_t wagons_no, int32_t platform_s, int32_t pos_s);
 
 int32_t                 find_express_train                  (train_station_t *station);
 int32_t                 find_overload_train                 (train_station_t *station);
 int32_t                 find_optimal_train                  (train_station_t *station);
-int32_t                 find_heaviest_sequence_train        (train_station_t *station, int32_t cars_no, train_wagon_t **start_car);
+int32_t                 find_heaviest_sequence_train        (train_station_t *station, int32_t wagons_no, train_wagon_t **start_wagon);
 
 void                    order_train                         (train_station_t *station, int32_t platform);
 void                    fix_overload_train                  (train_station_t *station);
