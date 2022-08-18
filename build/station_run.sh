@@ -50,5 +50,6 @@ function check_test {
 }
 
 init
+echo " "
 check_test
 make clean_all &> /dev/null
